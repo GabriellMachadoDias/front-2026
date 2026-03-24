@@ -1,12 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
+    <title>aula01</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main>
+      <img src="/academy.svg" width="434" alt="Icon Universidade" />
+      <h1>Aluno online</h1>
+      <main class="login-container">
+        <form id="loginForm" novalidate>
+          <fieldset class="input-group">
+            <label for="matricula">Matrícula</label>
+            <input type="text" id="matricula" />
+            <small class="error-message" id="matriculaError"></small>
+          </fieldset>
+          <fieldset class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" />
+            <small class="error-message" id="passwordError"></small>
+          </fieldset>
+          <button type="submit" id="btnLogin">Entrar</button>
+        </form>
+      </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    --cor-primaria: #3f3f3f;
+    --cor-secundaria: #8f0303;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    margin: 16px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--cor-primaria);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    line-height: 1.6;
+    padding: 0.5rem;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+button {
+    padding: 0.5rem;
+    line-height: 1.6;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor-primaria);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0.5rem;
+    background-color: var(--cor-secundaria);
+}
+
+header > img {
+    height: 32px;
+    width: 32px;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    main {
+        border: 1px solid var(--cor-primaria);
+        margin: 64px auto;
+        max-width: 400px;
+    }
+}
+
+msg-erro-input {
+    color: var(--cor-secundaria);
+    font-size: 0.8rem;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    height: 1rem;
+    font-weight: bold;
+}
+
+input.input-invalid {
+    border: 2px solid var(--cor-secundaria);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#loginForm {
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: var(--cor-secundaria);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    display: block;
+    min-height: 1em;
+}
