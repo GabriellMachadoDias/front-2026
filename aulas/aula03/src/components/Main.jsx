@@ -1,12 +1,11 @@
 import Topbar from "./Topbar";
-import Card from "./Card";
 
 function Main() {
   return (
     <main className="flex flex-col max-w-screen">
-      <Topbar />
-      <h2>Bem-vindo ao portal do aluno</h2>
-      <Card />
+      <Topbar titulo={props.titulo} />
+      <h2>{props.titulo}</h2>
+      <section>{props.children}</section>
     </main>
   );
 }
