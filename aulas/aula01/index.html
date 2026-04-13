@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -8,12 +8,16 @@
   </head>
   <body>
     <main>
-      <img src="/duolingo.svg" width="434" alt="duolingo brabo" />
-      <h1>Duolingo</h1>
+      <img src="/learn.svg" alt="Icone de um chapeu de formatura">
+      <h1>Aluno Online</h1>
       <label for="matricula">Matrícula</label>
-      <input type="number" id="matricula" name="matricula" />
+      <input type="number" id="matricula" 
+        name="matricula">
+      <p id="matriculaErro"></p>
       <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha" />
+      <input type="password" id="senha" 
+        name="senha">
+      <p id="senhaErro"></p>
       <button type="submit">Entrar</button>
     </main>
     <script type="module" src="/src/main.js"></script>
