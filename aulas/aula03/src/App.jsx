@@ -1,23 +1,20 @@
-import Dashboard from "./pages/Dashboard";
-import Notas from "./pages/Notas";
-import Faltas from "./pages/Faltas";
 import Boletos from "./pages/Boletos";
+import Dashboard from "./pages/Dashboard";
+import Faltas from "./pages/Faltas";
+import Notas from "./pages/Notas";
 import Requerimentos from "./pages/Requerimentos";
 
 function App() {
-  const pagina = 1;
-
-  switch(pagina) {
-    case 1: return <Dashboard />;
-    case 2: return <Notas />;
-    case 3: return <Faltas />;
-    case 4: return <Boletos />;
-    case 5: return <Requerimentos />;
-    deafult: return <>
+  const pagina = 4;
+  return (
+    <>
+      {pagina == 1 && <Dashboard />}
+      {pagina == 2 && <Notas />}
+      {pagina == 3 && <Faltas />}
+      {pagina == 4 && <Boletos />}
+      {pagina == 5 && <Requerimentos />}
     </>
-  }
-
-  return <Dashboard />;
+  );
 }
 
 export default App;

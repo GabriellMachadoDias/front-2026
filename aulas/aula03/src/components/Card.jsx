@@ -3,7 +3,7 @@ function Card(props) {
     <article>
       <h3>{props.titulo}</h3>
       <ul>
-        {props.itens.map((item, index) => (
+        {props.items.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>

@@ -6,7 +6,7 @@ function Menu() {
         <li>Notas</li>
         <li>Faltas</li>
         <li>Boletos</li>
-        <li>Requerimento</li>
+        <li>Requerimentos</li>
         <li>Sair</li>
       </ul>
     </nav>
