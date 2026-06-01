@@ -1,9 +1,7 @@
-import Menu from "../components/Menu";
-
 function About() {
   return (
     <>
-      <h1>Sobre a aplicação</h1>
+      <h1>Sobre a Aplicação</h1>
     </>
   );
 }
