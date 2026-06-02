@@ -1,13 +1,7 @@
 {
-  "produtos": [
-    {
-      "nome": "laranja",
-      "preço": 8.99,
-      "unidade": "Kg",
-      "id": "QKDgtfPbR-Q"
-    }
-  ],
+  "produtos": [],
   "fornecedores": [],
   "pedidos": [],
+  "usuarios": [],
   "$schema": "./node_modules/json-server/schema.json"
 }
