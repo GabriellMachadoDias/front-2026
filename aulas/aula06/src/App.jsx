@@ -1,13 +1,16 @@
 import { Routes, Route } from "react-router";
-import Listagem from "./Pages/Listagem";
-import Formulario from "./Pages/Formulario";
+import Listagem from "./pages/Listagem";
+import Formulario from "./pages/Formulario";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <Routes>
-      <Route path="/produtos" element={<Listagem />} />
-      <Route path="/produtos/novo" element={<Formulario />} />
-      <Route path="/produtos/editar/:id" element={<Formulario />} />
+      <Route path="/login" element={<Login />} />
+      <Route element={<Privado />} />
+      <Route path="produtos" element={<Listagem />} />
+      <Route path="produtos/novo" element={<Formulario />} />
+      <Route path="produtos/editar/:id" element={<Formulario />} />
     </Routes>
   );
 }

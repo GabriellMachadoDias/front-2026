@@ -66,4 +66,3 @@ async function remover(produto) {
 }
 
 export { criar, obter, listar, atualizar, remover };
-
